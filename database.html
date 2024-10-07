@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIM Card Activation</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; flex-direction: column; align-items: center; padding-top: 50px; }
+        form { display: flex; flex-direction: column; gap: 10px; width: 300px; }
+        button { padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+        #result { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>SIM Card Activation Service</h1>
+    <form id="simForm">
+        <input type="text" id="simNumber" placeholder="Enter SIM Number" required>
+        <button type="button" onclick="activateSIM()">Activate SIM</button>
+        <button type="button" onclick="deactivateSIM()">Deactivate SIM</button>
+        <button type="button" onclick="getSIMDetails()">Get SIM Details</button>
+    </form>
+    <div id="result"></div>
+
+    <script src="active.js"></script>
+</body>
+</html>
